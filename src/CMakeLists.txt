@@ -1,0 +1,38 @@
+add_subdirectory(modules/core)
+add_subdirectory(modules/logger)
+add_subdirectory(modules/registry)
+add_subdirectory(modules/services)
+add_subdirectory(modules/scheduled_tasks)
+add_subdirectory(modules/privacy)
+add_subdirectory(modules/cleaner)
+add_subdirectory(modules/performance)
+add_subdirectory(modules/diagnostics)
+add_subdirectory(modules/restore)
+add_subdirectory(modules/security)
+add_subdirectory(modules/processes)
+add_subdirectory(modules/packages)
+add_subdirectory(modules/filesystem)
+add_subdirectory(ui)
+
+add_executable(miransas-control
+    main.cpp
+)
+
+target_link_libraries(miransas-control
+    PRIVATE
+        miransas::core
+        miransas::logger
+        miransas::registry
+        miransas::services
+        miransas::scheduled_tasks
+        miransas::privacy
+        miransas::cleaner
+        miransas::performance
+        miransas::diagnostics
+        miransas::restore
+        miransas::security
+        miransas::processes
+        miransas::packages
+        miransas::filesystem
+        miransas::ui
+)
