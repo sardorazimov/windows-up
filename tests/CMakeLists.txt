@@ -18,6 +18,7 @@ add_executable(miransas_feature_tests
 target_link_libraries(miransas_feature_tests
     PRIVATE
         miransas::core
+        miransas::ui
 )
 
 target_compile_features(miransas_feature_tests PRIVATE cxx_std_23)

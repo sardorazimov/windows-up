@@ -19,6 +19,7 @@ namespace miransas::ui
 ImGuiLayer::ImGuiLayer(std::string_view app_name)
     : app_name_(app_name)
     , feature_manager_(std::make_unique<core::FeatureManager>())
+    , localization_(Language::English)
 {
     feature_manager_->register_feature(std::make_unique<privacy::PrivacyFeature>());
     feature_manager_->register_feature(std::make_unique<cleaner::CleanerFeature>());
@@ -35,7 +36,11 @@ ImGuiLayer::~ImGuiLayer() = default;
 
 void ImGuiLayer::run()
 {
-    std::cout << "Miransas Control initialized with " << feature_manager_->feature_count() << " feature modules.\n";
-    std::cout << "UI and business logic are separated; feature implementations are scaffolded for future expansion.\n";
+    std::cout << localization_.app_name() << " initialized with " << feature_manager_->feature_count() << " feature modules.\n";
+    std::cout << localization_.welcome_message() << "\n";
+    std::cout << localization_.features_title() << " | " << localization_.privacy_title() << "\n";
+    std::cout << "Toggle: " << localization_.toggle_label() << "\n";
+    localization_.toggle_language();
+    std::cout << "Switched to: " << localization_.toggle_label() << "\n";
 }
 } // namespace miransas::ui

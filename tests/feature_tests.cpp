@@ -4,6 +4,7 @@
 
 #include "miransas/core/feature.hpp"
 #include "miransas/core/feature_manager.hpp"
+#include "miransas/ui/localization.hpp"
 
 namespace
 {
@@ -47,6 +48,26 @@ int main()
     if (!undo_result)
     {
         std::cerr << undo_result.error().to_string() << '\n';
+        return 1;
+    }
+
+    miransas::ui::LocalizationManager localization{miransas::ui::Language::English};
+    if (localization.app_name() != "Miransas Control")
+    {
+        std::cerr << "Unexpected English app name" << std::endl;
+        return 1;
+    }
+
+    localization.toggle_language();
+    if (localization.toggle_label() != "Inglizcha ga o‘tish")
+    {
+        std::cerr << "Unexpected Uzbek toggle label" << std::endl;
+        return 1;
+    }
+
+    if (localization.welcome_message() != "Miransas Controlga xush kelibsiz")
+    {
+        std::cerr << "Unexpected Uzbek welcome message" << std::endl;
         return 1;
     }
 

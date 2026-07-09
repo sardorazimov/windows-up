@@ -3,6 +3,7 @@
 #include <memory>
 
 #include "miransas/core/feature_manager.hpp"
+#include "miransas/ui/localization.hpp"
 
 namespace miransas::ui
 {
@@ -22,5 +23,6 @@ public:
 private:
     std::string app_name_;
     std::unique_ptr<core::FeatureManager> feature_manager_;
+    LocalizationManager localization_;
 };
 } // namespace miransas::ui

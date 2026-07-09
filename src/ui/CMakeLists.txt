@@ -1,5 +1,6 @@
 add_library(miransas_ui STATIC
     src/imgui_layer.cpp
+    src/localization.cpp
 )
 
 add_library(miransas::ui ALIAS miransas_ui)

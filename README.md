@@ -12,6 +12,17 @@ A modern Windows optimization, privacy, and maintenance utility built with C++23
 * Manage startup applications and services
 * Create restore points before changes
 * Fully native Windows application
+* Language toggle with English and Uzbek support
+
+## Language Support
+
+The application now includes a simple language toggle so the UI can switch between English and Uzbek text.
+
+## Screenshots
+
+![Dark mode preview](assets/hero-demo-dark.png)
+
+![Light mode preview](assets/hero-demo-light.png)
 
 ## Privacy
 
@@ -41,6 +52,7 @@ Use at your own risk.
 ## License
 
 MIT License
+
 # Miransas Control
 
 C++23 yordamida yaratilgan zamonaviy Windows optimizatsiya va maxfiylik dasturi.
@@ -54,6 +66,17 @@ C++23 yordamida yaratilgan zamonaviy Windows optimizatsiya va maxfiylik dasturi.
 * Tizim unumdorligini oshirish
 * Avtomatik ishga tushadigan dasturlarni boshqarish
 * O‘zgarishlardan oldin tiklash nuqtasi yaratish
+* Ingliz va O‘zbek tillari o‘rtasida til almashinuvi
+
+## Til yordami
+
+Ilova endi UI matnlarini ingliz va o‘zbek tillarida almashishga imkon beruvchi oddiy til tugmasiga ega.
+
+## Ekran rasmlari
+
+![Qorong‘i rejimdagi ko‘rinish](assets/hero-demo-dark.png)
+
+![Yorug‘ rejimdagi ko‘rinish](assets/hero-demo-light.png)
 
 ## Maxfiylik
 
