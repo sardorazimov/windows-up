@@ -74,9 +74,9 @@ Ilova endi UI matnlarini ingliz va o‘zbek tillarida almashishga imkon beruvchi
 
 ## Ekran rasmlari
 
-![Qorong‘i rejimdagi ko‘rinish](assets/hero-demo-dark.png)
+<!-- ![Qorong‘i rejimdagi ko‘rinish](assets/hero-demo-dark.png)
 
-![Yorug‘ rejimdagi ko‘rinish](assets/hero-demo-light.png)
+![Yorug‘ rejimdagi ko‘rinish](assets/hero-demo-light.png) -->
 
 ## Maxfiylik
 

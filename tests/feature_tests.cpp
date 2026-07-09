@@ -13,7 +13,7 @@ class DemoFeature final : public miransas::core::Feature
 public:
     std::string_view name() const noexcept override { return "DemoFeature"; }
     std::string_view Description() const noexcept override { return "A sample feature for tests"; }
-    miransas::core::RiskLevel RiskLevel() const noexcept override { return miransas::core::RiskLevel::Low; }
+    miransas::core::RiskLevel risk_level() const noexcept override { return miransas::core::RiskLevel::Low; }
     miransas::core::Result<bool> Check() const override { return true; }
     miransas::core::Result<void> Apply() override { return {}; }
     miransas::core::Result<void> Undo() override { return {}; }
